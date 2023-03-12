@@ -44,7 +44,7 @@
 
 
 /* basic styles START*/
-html {
+* {
     box-sizing: border-box;
 }
 
@@ -60,33 +60,74 @@ body {
     background-color: #EAD283;
    }
 
+a {
+    text-decoration: none;
+    color: black;
+}   
+
+a:hover {
+    color:indigo;
+}
 
 /* basic styles END*/
 
-ul {
-    list-style: none;
-   }
 
-li {
-    display: flex;
-    justify-content: space-between;
-    padding: 1%;
-    border: 0.1rem solid rgb(0, 0, 0, 0.1);
-   }
 
+/* bayan styles START*/
 .container {
     max-width: 70%;
     margin: 0 15% 0 15%;
     padding: 0;
     cursor: pointer;
- }  
+ }
+
+/* list style START*/
+ul {
+    list-style: none;
+   }
+
+.second_list {
+    display: none;
+}
+
+.main_item:hover > .second_list {
+    display: initial;
+    
+}
+/* list style END*/
+
+
+/* item style START*/
+.main_item {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    border-top: 0.1rem solid rgb(0, 0, 0, 0.1);
+}
+
+.second_item {
+    display: flex;
+    justify-content: center;
+}
+
+.main_item_container {
+    display: flex;
+    justify-content: space-between;
+}   
+    
+.first_item {
+    border: 0;
+}    
 
  h1 {
     margin-left: 4%;
  }
 
-
-/* bayan styles START*/
+.meme {
+    width: 60%;
+    height: 60%;
+ }
+ /* item style END*/
 
 /* bayan styles END*/
 

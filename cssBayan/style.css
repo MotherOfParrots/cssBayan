@@ -68,7 +68,6 @@ a {
 a:hover {
     color:indigo;
 }
-
 /* basic styles END*/
 
 
@@ -92,7 +91,6 @@ ul {
 
 .main_item:hover > .second_list {
     display: initial;
-    
 }
 /* list style END*/
 
@@ -113,6 +111,11 @@ ul {
 .main_item_container {
     display: flex;
     justify-content: space-between;
+}
+
+.main_item_container:hover > .icon {
+    transform: rotate(135deg);
+    transition: 0.5s;
 }   
     
 .first_item {
